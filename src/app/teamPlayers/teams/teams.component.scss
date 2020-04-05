@@ -1,0 +1,13 @@
+.circled{
+    height: 30px;
+    width: 30px;
+    background-color: #f2f2f2;
+    
+}
+@media screen and (max-width: 425px){
+    .screenalign {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+    }
+}

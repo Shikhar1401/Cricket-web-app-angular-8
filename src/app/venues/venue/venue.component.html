@@ -1,0 +1,13 @@
+<div class="conatiner-fluid">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 pad" *ngFor="let v of venues">
+            <div class="card my-2 ">
+                <img class="card-img-top img-fluid imgsize" src="assets/images/{{v.image}}" alt="venues" style="height: 200px;">
+                <div class="card-body bodyback">
+                    <h5 class="card-title">{{v.name}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{v.add}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

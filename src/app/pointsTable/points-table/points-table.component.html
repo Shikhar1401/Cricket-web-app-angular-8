@@ -1,0 +1,25 @@
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">S.No</th>
+        <th scope="col" >TeamName</th>
+        <th scope="col">Win</th>
+        <th scope="col">Loss</th>
+        <th scope="col">Draw</th>
+        <th scope="col">Points</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let p of points; let i = index'>
+        <th scope="row">{{i + 1}}</th>
+        <td>{{p.team}}</td>
+        <td>{{p.win}}</td>
+        <td>{{p.losses}}</td>
+        <td>{{p.draw}}</td>
+        <td>{{(p.win * 2) + (p.draw * 1)}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

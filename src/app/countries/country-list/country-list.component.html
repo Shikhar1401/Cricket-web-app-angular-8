@@ -1,0 +1,42 @@
+<!-- <ul class="heroes">
+  <li *ngFor='let c of country' (click)="onSelect(c)">
+    <a routerLink="/teams/{{c.cid}}">
+      <span class="badge">{{c.cid}}</span> {{c.name}}
+    </a> -->
+    <!-- <h4>{{}}</h4> -->
+  <!-- </li>
+</ul> -->
+<div class=" d-flex flex-row justify-content-center">
+  <img src="assets/images/logo.png" width="250" height="250">
+</div>
+<div class="grid grid-pad">
+  <a *ngFor="let c of country" class="col-lg-3 col-sm-12 col-md-6"
+  routerLink="/teams/{{c.cid}}">
+    <div class="module d-flex flex-column justify-content-center align-items-center">
+      <div class="row rowsize d-flex flex-row align-items-center"> 
+        <div class="col-5 p-0">
+          <img src="assets/images/{{c.image}}" class="imageadjust">
+        </div>
+        <div class="col-7 p-0">
+          <h5>{{c.name}}</h5> 
+          <p class="mb-0 fontsize">View Teams</p> 
+        </div>
+      </div>
+    </div>  
+  </a>
+</div>
+
+<!-- <div *ngIf="selectedCountry">
+
+  <h2>{{selectedCountry.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedCountry.cid}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedCountry.name" placeholder="name"/>
+    </label>
+  </div>
+  <div>
+    <span>image: </span>{{selectedCountry.image}}
+  </div>
+
+</div> -->

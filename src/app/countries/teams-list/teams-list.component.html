@@ -1,0 +1,19 @@
+<!-- <p>teams-list works!</p> -->
+ 
+<div class="conatiner-fluid d-flex flex-column align-items-center mb-2"  *ngIf="teams">
+    <h2 class=" card-title p-3">Team Details</h2>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card" style="width: 18rem;">
+          <img src="{{teams.image}}" class="card-img-top" alt="team.logo">
+          <div class="card-body back">
+            <h5 class="card-title"><label>Team Name: &nbsp;</label>{{teams.name}}</h5>
+            <h6 class="card-subtitle text-muted"><label>Country: &nbsp;</label>{{teams.country}}</h6>
+            <p class="card-text"></p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>

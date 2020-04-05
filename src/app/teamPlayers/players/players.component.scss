@@ -1,0 +1,43 @@
+.container-fluid{background-color:#f1f1f1;}
+.watch-card{margin-top:50px;margin-bottom:50px;}
+// .watch-card > div{max-width:300px;}
+.watch-card {
+    background-color: #999999;
+}
+.watch-card:hover , .watch-card:hover .listing-tab .tab-content ul li a{color:#167ac9;}
+.listing-tab .tab-content ul li:hover{cursor:pointer;text-decoration:none;}
+.matchlabel {font-weight: 600;}
+
+// .collage{
+//     width: 300px;
+// }
+
+.back_2{
+    background-color: #ccccff;
+}
+.player{
+    background-color: #dd99ff;
+    padding: 15px;
+}
+.player h4 {
+    font-size: 21px;
+    font-family: arial, san-serif;
+    color: white;
+}
+.player p{
+    font-family: arial, san-serif;
+    color: white;
+}
+.player h4:hover,.player label:hover, .player p:hover {
+    color: #404040;
+}
+
+.borderradii{border-radius: 25px!important;}
+
+@media screen and (max-width:768px) and (min-width: 450px) {
+    .mdsize{ 
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center!important;
+    }
+}

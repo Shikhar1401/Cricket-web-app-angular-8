@@ -1,0 +1,25 @@
+<ul class="list-group">
+    <li class="list-group-item disabled" *ngFor="let m of matches">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2 col-sm-1 col-md-2 d-flex flex-row justify-content-start align-items-center">
+            <label class="mb-0">Match</label>&nbsp;{{m.mno}}
+          </div>
+          <div class="col-lg-3 col-sm-3 col-md-3 d-flex flex-row justify-content-start align-items-center">
+            {{m.btw}}
+          </div>
+          <div class="col-lg-2 col-sm-3 col-md-3 font-weight-bold d-flex flex-row justify-content-start align-items-center">
+            {{m.result}}
+          </div>
+          <div class="col-lg-5 col-sm-4 col-md-4 d-flex flex-row justify-content-end align-items-center">
+            <a routerLink="/match/{{m.mno}}">See Full Scorecard</a>
+          </div>
+        </div>
+      </div>
+        <!-- <a >
+        <span>{{m.mno}}  </span>{{m.btw}} {{m.result}}
+        </a> -->
+    </li>
+
+</ul>
+<!-- <router-outlet></router-outlet> -->
